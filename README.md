@@ -1,9 +1,13 @@
-Now Android application is created, but it stands separately. It should be merged into encompassing project.
+Now Android application is integrated into encompassing project. 
+
+So it can depend on `mpp-library` and use its functionality.
 
 ---
 
-1. Include `android-app` project into `settings.gradle`
+1. Add a dependency on `mpp-library` as `implementation project(':mpp-library')`
 
-2. Copy configuration information from gradle properties and scripts of `android-app` to the `base-dir` and remove them
-   
-3. Move content of the `android-app\app` folder into wrapping `android-app`
+2. Mark application TextView with id by adding an attribute like `android:id="@+id/text"`
+
+3. Find this view in `MainActivity` as `findViewById<TextView>(R.id.text)`
+
+4. Use `hello` function from `mpp-library` to modify TextView 
