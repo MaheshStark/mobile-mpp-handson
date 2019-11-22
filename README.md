@@ -1,9 +1,9 @@
-Once encompassing project is created, Android application could be a part of it.
+Now Android application is created, but it stands separately. It should be merged into encompassing project.
 
 ---
 
-1. Using *Intellij IDEA*, create an *Android* application template project
+1. Include `android-app` project into `settings.gradle`
 
-2. Pick it to have empty activity, its language to be Kotlin
-
-3. Place it like: `base-dir/android-app`
+2. Copy configuration information from gradle properties and scripts of `android-app` to the `base-dir` and remove them
+   
+3. Move content of the `android-app\app` folder into wrapping `android-app`
