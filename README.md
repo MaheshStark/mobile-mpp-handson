@@ -1,12 +1,9 @@
-Cornerstone of the cross-platform development in Kotlin is Multiplatform Library.
+It is possible to interact with Multiplatform Library in a number of ways.
 
-For the mobile setting it is enough to have one with JVM and iOS targets.
+Straightforward way is to make it part of the project, so it could be developed along with its applications.
 
 ---
 
-1. Using *Intellij IDEA*, create a *Mobile Shared Library* template project:
-   `base-dir/mpp-library`
+1. Move gradle configuration files down to `base-dir` (all except build script)
 
-2. Strip its build script of `task iosTest` and `configuration`
-
-3. Update *Gradle* used by wrapper to 5.6
+2. Rename base project to just `mpp` to avoid confusion
