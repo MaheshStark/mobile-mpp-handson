@@ -1,9 +1,5 @@
-Once integration is done, it is possible to call `hello` function in Swift code.
+That's it! 
 
----
+You can advance further with [kotlinlang.org](kotlinlang.org).
 
-1. Change `ContenView` to accept its text in constructor
-
-2. `import mpp_library` in `SceneDelegate.swift`
-
-3. Call it in `ContentView` initialization as `SampleKt.hello()`
+Operative source of help is [kotlinlang.slack.com](kotlinlang.slack.com). You can get an invite at [slack.kotl.in](slack.kotl.in).
