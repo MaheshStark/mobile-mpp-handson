@@ -1,0 +1,16 @@
+PODS:
+  - mpp_library (0.0.1)
+
+DEPENDENCIES:
+  - mpp_library (from `../mpp-library`)
+
+EXTERNAL SOURCES:
+  mpp_library:
+    :path: "../mpp-library"
+
+SPEC CHECKSUMS:
+  mpp_library: 53fa017fc5982b94727464db85f39b79f6d44d95
+
+PODFILE CHECKSUM: 098b1e409ea3be71ae21f47ca658c97df8cafa1b
+
+COCOAPODS: 1.8.4

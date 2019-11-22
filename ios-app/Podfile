@@ -1,0 +1,10 @@
+target 'ios-app' do
+  use_frameworks!
+
+  pod 'mpp_library', :path => '../mpp-library'
+
+  target 'ios-appTests' do
+    inherit! :search_paths
+  end
+
+end

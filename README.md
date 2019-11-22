@@ -1,26 +1,9 @@
-At this point we are ready to integrate `mobile-mpp` into `ios-app`.
+Once integration is done, it is possible to call `hello` function in Swift code.
 
 ---
 
-1. Add Podfile into `ios-app` (see content below)
+1. Change `ContenView` to accept its text in constructor
 
-2. Close *Xcode* and run `pod install` command near newly created Podfile
+2. `import mpp_library` in `SceneDelegate.swift`
 
-3. Open `*.xcworkspace` instead of  `*.xcodeproj`
-
-4. Check that application still launches
-
----
-
-Content of Podfile:
-```
-target 'ios-app' do
-  use_frameworks!
-
-  pod 'mpp_library', :path => '../mpp-library'
-
-  target 'ios-appTests' do
-    inherit! :search_paths
-  end
-end
-```
+3. Call it in `ContentView` initialization as `SampleKt.hello()`
