@@ -1,13 +1,11 @@
-Now Android application is integrated into encompassing project. 
+It is demonstrated how Android application can use Multiplatform Library.
 
-So it can depend on `mpp-library` and use its functionality.
+Now it is time for iOS application.
 
 ---
 
-1. Add a dependency on `mpp-library` as `implementation project(':mpp-library')`
+1. Using *Xcode*, create a *Single View App* iOS application template project
 
-2. Mark application TextView with id by adding an attribute like `android:id="@+id/text"`
+2. Pick it to use SwiftUI for layout, its language to be Swift
 
-3. Find this view in `MainActivity` as `findViewById<TextView>(R.id.text)`
-
-4. Use `hello` function from `mpp-library` to modify TextView 
+3. Place it like: `base-dir/ios-app`
