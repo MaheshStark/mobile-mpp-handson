@@ -1,11 +1,11 @@
-It is demonstrated how Android application can use Multiplatform Library.
-
-Now it is time for iOS application.
+Once iOS application is here, it needs to be provided with API of `mpp-library`.
 
 ---
 
-1. Using *Xcode*, create a *Single View App* iOS application template project
+1. Add plugin `org.jetbrains.kotlin.native.cocoapods` into `mpp-library` build 
+   script
 
-2. Pick it to use SwiftUI for layout, its language to be Swift
+2. Remove binaries creation in `iosX64("ios")` to avoid task duplication
 
-3. Place it like: `base-dir/ios-app`
+3. Run `./gradlew podspec` inside `base-dir` and check that `podspec` file has 
+   appeared in `base-dir\mpp-library`
