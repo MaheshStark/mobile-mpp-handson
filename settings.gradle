@@ -1,0 +1,6 @@
+rootProject.name = 'mpp'
+
+
+enableFeaturePreview('GRADLE_METADATA')
+
+include(':mpp-library')

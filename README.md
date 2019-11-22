@@ -1,9 +1,9 @@
-It is possible to interact with Multiplatform Library in a number of ways.
-
-Straightforward way is to make it part of the project, so it could be developed along with its applications.
+Once encompassing project is created, Android application could be a part of it.
 
 ---
 
-1. Move gradle configuration files down to `base-dir` (all except build script)
+1. Using *Intellij IDEA*, create an *Android* application template project
 
-2. Rename base project to just `mpp` to avoid confusion
+2. Pick it to have empty activity, its language to be Kotlin
+
+3. Place it like: `base-dir/android-app`
