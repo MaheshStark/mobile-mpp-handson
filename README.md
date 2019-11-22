@@ -1,11 +1,26 @@
-Once iOS application is here, it needs to be provided with API of `mpp-library`.
+At this point we are ready to integrate `mobile-mpp` into `ios-app`.
 
 ---
 
-1. Add plugin `org.jetbrains.kotlin.native.cocoapods` into `mpp-library` build 
-   script
+1. Add Podfile into `ios-app` (see content below)
 
-2. Remove binaries creation in `iosX64("ios")` to avoid task duplication
+2. Close *Xcode* and run `pod install` command near newly created Podfile
 
-3. Run `./gradlew podspec` inside `base-dir` and check that `podspec` file has 
-   appeared in `base-dir\mpp-library`
+3. Open `*.xcworkspace` instead of  `*.xcodeproj`
+
+4. Check that application still launches
+
+---
+
+Content of Podfile:
+```
+target 'ios-app' do
+  use_frameworks!
+
+  pod 'mpp_library', :path => '../mpp-library'
+
+  target 'ios-appTests' do
+    inherit! :search_paths
+  end
+end
+```

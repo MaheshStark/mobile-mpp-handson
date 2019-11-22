@@ -1,5 +1,6 @@
 plugins {
     id 'org.jetbrains.kotlin.multiplatform'
+    id 'org.jetbrains.kotlin.native.cocoapods'
 }
 
 repositories {
@@ -12,13 +13,14 @@ version '0.0.1'
 apply plugin: 'maven-publish'
 
 kotlin {
-    jvm()
-
-    iosX64("ios") {
-        binaries {
-            framework()
-        }
+    cocoapods {
+        summary = "Cross-platform mobile library."
+        homepage = "colombo.lk"
     }
+    
+    jvm()
+    
+    iosX64("ios") {}
 
     sourceSets {
         commonMain {
